@@ -8,6 +8,27 @@
  *
  * Description: Prints the counting array after setting it UPWARD.
  */
+/**
+ * get_max - Get the maximum val in an array of integrs.
+ * @array: An array of integrs.
+ * @size: The size of the array.
+ *
+ * Return: The maximum integr in the array.
+ */
+
+int get_max(int *array, int size)
+{
+        int max, i;
+
+        for (max = array[0], i = 1; i < size; i++)
+        {
+                if (array[i] > max)
+                        max = array[i];
+        }
+
+        return (max);
+}
+
 void counting_sort(int *array, size_t size)
 {
 	int *count, *_sorted, max, i;
@@ -54,16 +75,3 @@ void counting_sort(int *array, size_t size)
  *
  * Return: The maximum integr in the array.
  */
-int get_max(int *array, int size)
-{
-	int max, i;
-
-	for (max = array[0], i = 1; i < size; i++)
-	{
-		if (array[i] > max)
-			max = array[i];
-	}
-
-	return (max);
-}
-

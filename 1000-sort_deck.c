@@ -127,7 +127,7 @@ void insertion_sort_deck_val(deck_node_t **deck)
 }
 
 /**
- * sort_deck - Sort a deck of cards from ace to king and
+ * sort_deck - Sort a deck of cards from ace to king also
  *             from spades to diamonds.
  * @deck: A points to the head of a deck_node_t doubly-linked list.
  */
