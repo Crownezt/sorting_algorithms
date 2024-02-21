@@ -5,8 +5,8 @@
 #include <stdlib.h>
 
 /* Compares the direction of macros for bitonic sort */
-#define UPWARD 0
-#define DOWNWARD 1
+#define UP 0
+#define DOWN 1
 
 /**
  * enum bool - Enumeration of Boolean vals.
@@ -22,9 +22,9 @@ typedef enum bool
 /**
  * struct listint_s - Doubly linked list node
  *
- * @n: integr stored in the node
- * @prev: points to the previous element of the list
- * @next: points to the next element of the list
+ * @n: integer stored in the node
+ * @prev: pointer to the previous element of the list
+ * @next: pointer to the next element of the list
  */
 typedef struct listint_s
 {
@@ -51,4 +51,4 @@ void radix_sort(int *array, size_t size);
 void bitonic_sort(int *array, size_t size);
 void quick_sort_hoare(int *array, size_t size);
 
-#endif /* SORT_H */}
+#endif /* SORT_H */

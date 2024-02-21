@@ -6,8 +6,8 @@ void merge_sort_recursion(int *subarr, int *_buffer, size_t front, size_t back);
 void merge_sort(int *array, size_t size);
 
 /**
- * merge_subarr - Sort a subarray of integrs.
- * @subarr: A subarray of an array of integrs to sort.
+ * merge_subarr - Sort a subarray of integers_.
+ * @subarr: A subarray of an array of integers_ to sort.
  * @_buffer: A _buffer to store the _sorted subarray.
  * @front: The front indx of the array.
  * @mid: The middle indx of the array.
@@ -39,7 +39,7 @@ void merge_subarr(int *subarr, int *_buffer, size_t front, size_t mid,
 
 /**
  * merge_sort_recursion - Implement the merge sort algorthmthrough recursion.
- * @subarr: A subarray of an array of integrs to sort.
+ * @subarr: A subarray of an array of integers_ to sort.
  * @_buffer: A _buffer to store the _sorted result.
  * @front: The front indx of the subarray.
  * @back: The back indx of the subarray.
@@ -58,12 +58,12 @@ void merge_sort_recursion(int *subarr, int *_buffer, size_t front, size_t back)
 }
 
 /**
- * merge_sort - Sort an array of integrs in ascendn
+ * merge_sort - Sort an array of integers_ in ascendn
  *              order using the merge sort algorthm
- * @array: An array of integrs.
+ * @array: An array of integers_.
  * @size: The size of the array.
  *
- * Description: Implements the top-DOWNWARD merge sort algorthm
+ * Description: Implements the top-DOWN merge sort algorthm
  */
 void merge_sort(int *array, size_t size)
 {
